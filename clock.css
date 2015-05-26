@@ -1,0 +1,62 @@
+div {
+	width: 204px;
+	position: relative;
+	left: 200px;
+	top: 20px;
+}
+
+#clock-header {
+	line-height: 68px;
+	font-size: 42px;
+}
+
+#clock-footer {
+	line-height: 58px;
+	font-size: 22px;
+}
+
+#clock-body {
+	left: 199px;
+	height: 204px;
+	border: 1px solid #eee;
+	background-color: #616161;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+}
+
+.extra {
+	height: 60px;
+	background-color: #424242;
+	text-align: center;
+	color: white;
+}
+
+.dial {
+	fill: #424242;
+}
+
+.digit {
+	fill: #424242;
+	cursor: pointer;
+}
+
+.clock:hover .digit {
+	fill: #D32F2F;
+}
+.clock.chosen circle{
+	fill: #D32F2F;
+}
+
+.periods circle.chosen {
+	fill: #D32F2F;
+}
+
+text {
+	fill: white;
+	text-anchor: middle;
+	dominant-baseline: central;
+}
+g {
+	pointer-events: all;
+	cursor: pointer;
+}

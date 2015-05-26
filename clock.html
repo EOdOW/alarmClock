@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title>Android Clock</title>
+	<link rel="stylesheet" href="./clock.css">
+	<script src="./d3/d3.min.js" charset="utf-8"></script>
+	<script src="./model/Event.js" type="text/javascript"></script>
+	<script src="./model/alarmModel.js" type="text/javascript"></script>
+	<script src="./view/alarmView.js" type="text/javascript"></script>
+	<script src="./view/clockView.js" type="text/javascript"></script>
+	<script src="./model/clockModel.js" type="text/javascript"></script>
+	<script src="./app.js" type="text/javascript"></script>
+</head>
+<body>
+	<div id='clock-header' class="extra">
+		<span id="hours">00</span> :
+		<span id="minutes">00</span>
+		<span id="periods" class="chosen">AM</span>
+	</div>
+	<div id="clock-body">
+		<svg width="100%" height="100%">
+			<g id="hours_clock"></g>
+			<g id="minutes_clock"></g>
+		</svg>
+	</div>
+	<div id='clock-footer' class="extra">Done</div>
+</body>
+</html>
